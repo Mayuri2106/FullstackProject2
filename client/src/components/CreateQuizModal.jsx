@@ -22,7 +22,7 @@ function CreateQuizModal({ showModal, handleClose, userId }) {
         throw new Error('Missing required fields');
       }
 
-      const response = await axios.post('http://localhost:5000/prepare-quiz', {
+      const response = await axios.post('https://quizbuilderapp-1iew.onrender.com/prepare-quiz', {
         quizName,
         quizType,
         userId,

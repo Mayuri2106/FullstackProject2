@@ -20,7 +20,7 @@ const ShareLink = () => {
   // Debounced function to fetch quiz data
   const fetchQuizData = debounce(async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/${quizId}`);
+      const response = await axios.get(`https://quizbuilderapp-1iew.onrender.com/${quizId}`);
       console.log('Quiz data received:', response.data);
       setQuizData(response.data);
       setLoading(false);
@@ -59,7 +59,7 @@ const ShareLink = () => {
     setSelectedOption(index);
     
     // Send the selected option to the backend
-    axios.post(`http://localhost:5000/quizzes/${quizId}/questions/${currentQuestionIndex}/answer`, {
+    axios.post(`https://quizbuilderapp-1iew.onrender.com/quizzes/${quizId}/questions/${currentQuestionIndex}/answer`, {
       selectedOption: index,
     })
     .then(response => {
@@ -95,7 +95,7 @@ const ShareLink = () => {
   
   const handleSubmit = async () => {
     try {
-      await axios.post(`http://localhost:5000/quizzes/${quizId}/submit`, {
+      await axios.post(`https://quizbuilderapp-1iew.onrender.com/quizzes/${quizId}/submit`, {
         answers: [...answeredQuestions, { question: currentQuestionIndex, answer: selectedOption }],
       });
       setShowResult(true);

@@ -14,7 +14,7 @@ const QuestionAnalysis = () => {
     console.log('Quiz ID:', quizId); // Log quizId to ensure it's correctly extracted
     if (quizId) {
       setLoading(true);
-      axios.get(`http://localhost:5000/quizzes/${quizId}/questions`)
+      axios.get(`https://quizbuilderapp-1iew.onrender.com/quizzes/${quizId}/questions`)
         .then(response => {
           console.log('API Response:', response.data); // Log response data
           setQuizData(response.data);

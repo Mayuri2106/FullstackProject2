@@ -38,7 +38,7 @@ function SignupForm({ onSignupSuccess }) {
     }
 
     try {
-      await axios.post('http://localhost:5000/signup', formData);
+      await axios.post('https://quizbuilderapp-1iew.onrender.com/signup', formData);
       onSignupSuccess(); // Notify AuthPage to switch to login view
     } catch (err) {
       setErrors({ global: err.response?.data?.message || 'An error occurred' });

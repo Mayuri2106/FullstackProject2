@@ -109,11 +109,11 @@ const QuizForm = ({ handleClose, quizName, quizType, userId, quizData = null, is
   
       if (quizData) {
         // PUT request to update the existing quiz
-        response = await axios.put(`http://localhost:5000/${quizData._id}`, quizDataToSend);
+        response = await axios.put(`https://quizbuilderapp-1iew.onrender.com/${quizData._id}`, quizDataToSend);
         quizId = quizData._id; // Use the existing quiz ID
       } else {
         // POST request to create a new quiz
-        response = await axios.post('http://localhost:5000/quizzes', quizDataToSend);
+        response = await axios.post('https://quizbuilderapp-1iew.onrender.com/quizzes', quizDataToSend);
         quizId = response.data._id; // Use the new quiz ID from the response
       }
   

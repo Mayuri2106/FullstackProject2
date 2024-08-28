@@ -16,7 +16,7 @@ const QuizAnalysis = ({ userId }) => {
 
   useEffect(() => {
     if (userId) {
-      axios.get(`http://localhost:5000/quizzes/${userId}`)
+      axios.get(`https://quizbuilderapp-1iew.onrender.com/quizzes/${userId}`)
         .then(response => setQuizzes(response.data))
         .catch(error => console.error('Error fetching quizzes:', error.response ? error.response.data : error.message));
     }
@@ -34,7 +34,7 @@ const QuizAnalysis = ({ userId }) => {
   };
 
   const confirmDelete = () => {
-    axios.delete(`http://localhost:5000/quizzes/${quizToDelete}`)
+    axios.delete(`https://quizbuilderapp-1iew.onrender.com/quizzes/${quizToDelete}`)
       .then(() => {
         setQuizzes(quizzes.filter(quiz => quiz._id !== quizToDelete));
         setShowConfirmDialog(false);

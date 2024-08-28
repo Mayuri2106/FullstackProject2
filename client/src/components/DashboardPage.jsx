@@ -20,7 +20,7 @@ function DashboardPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/dashboard/${userId}`);
+        const response = await axios.get(`https://quizbuilderapp-1iew.onrender.com/dashboard/${userId}`);
         setTotalQuizzes(response.data.totalQuizzes);
         setTotalQuestions(response.data.totalQuestions);
         setTotalViews(response.data.totalViews);
@@ -35,7 +35,7 @@ function DashboardPage() {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:5000/logout');
+      await axios.post('https://quizbuilderapp-1iew.onrender.com/logout');
       localStorage.removeItem('token');
       navigate('/');
     } catch (error) {
