@@ -13,10 +13,8 @@ connectDB();
 // Middleware
 //const allowedOrigins = [process.env.BASE_URL, 'https://meek-nasturtium-a72598.netlify.app'];
 const allowedOrigins = [process.env.BASE_URL, 'https://radiant-paletas-e87272.netlify.app/'];
-
 const corsOptions = {
     origin: function (origin, callback) {
-        // Allow requests with no origin, like mobile apps or curl requests
         if (!origin) return callback(null, true);
         if (allowedOrigins.includes(origin)) {
             callback(null, true);
@@ -27,8 +25,9 @@ const corsOptions = {
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token'],
     credentials: true,
-    optionsSuccessStatus: 200 // Some legacy browsers choke on 204
+    optionsSuccessStatus: 200
 };
+
 
 app.use(cors(corsOptions));
 
