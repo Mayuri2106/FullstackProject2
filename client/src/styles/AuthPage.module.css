@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .box {
+    width: 1066px;
+    height:611px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+
+
+ 
+h1 {
+  margin-bottom: 20px;
+  font-size: 100px;
+  font-weight: 400;
+  color: #474444;
+  font-family: 'Jomhuria', sans-serif;
+}
+  
+.buttonGroup {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 60px; /* Adjust this value to control the space between buttons */
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+  
+  .button1 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s;
+    width: 217px;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+    color: #474444;
+    font-weight: 600;
+    font-size: 20px;
+    
+  }
+  
+  
+  button.active {
+   box-shadow: 0px 0px 50px 0px #0019FF3D;
+    
+  }
+  

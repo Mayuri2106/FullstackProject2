@@ -1,0 +1,91 @@
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.errorInput {
+  border: 1px solid red !important; /* Red border for invalid input fields */
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+.label {
+  width: 30%;
+  margin-right: 10px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 55px;
+  color: #474444;
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins font is applied */
+}
+
+/* Placeholder styles */
+input::placeholder {
+  color: black; /* Default placeholder color */
+}
+
+input.errorInput::placeholder {
+  color: red; /* Red placeholder color for error */
+  
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formGroup {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    margin-left: 200px;
+    }
+
+
+    .inputField {
+      width: 400px !important; /* Ensures the width is applied */
+      padding: 10px !important;
+      border-radius: 10px 10px 0px 0px !important; /* Ensures border-radius is applied */
+      opacity: 1 !important;
+      border:none !important;
+      background-color: #F4F4F4;
+      
+    }
+  
+  
+  .submitBtn {
+    Width:274px;
+Height:38px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A9BCFF;
+    color:  #474444;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 20px; /* Adjust the line height */
+    display: flex;
+    align-items: center; /* Vertically align the text */
+    justify-content: center; /* Center text horizontally */
+    margin-top: 50px;
+    font-size: 16px;
+  font-weight: 600;
+  }
+  
+  .submitBtn:hover {
+    background-color: #a9bcffb2;
+  }

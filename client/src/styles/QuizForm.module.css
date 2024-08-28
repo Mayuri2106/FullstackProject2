@@ -1,0 +1,501 @@
+
+
+.modalContent1{background: white;
+  padding: 20px;
+ width: 845px;
+height: 655px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;}
+
+
+
+.inField1  {
+width: 100%;
+padding: 10px;
+border: none;
+font-size: 20px;
+margin-bottom: 20px;
+box-shadow: 0px 0px 25px 0px #00000026;
+margin-left: 80px;
+width: 673px;
+height: 50px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+font-weight: 600;
+
+
+}
+
+
+
+.inField1::placeholder , .inField1_2::placeholder{
+color: #9F9F9F;
+}
+
+.inField1_2{
+width:296px;
+padding: 10px;
+border: none;
+font-size: 20px;
+margin-bottom: 20px;
+box-shadow: 0px 0px 25px 0px #00000026;
+
+
+height: 50px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+font-weight: 600;
+}
+
+
+.inField1_2.greenBackground {
+  background-color: #60B84B;
+  color: white; /* Makes the input text white */
+}
+
+
+
+.inField1_2.greenBackground::placeholder {
+  color: white;
+}
+
+
+/* CreateQuizModal.module.css */
+
+/* Ensure existing styles are preserved */
+
+.questionHeader {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 10px;
+margin-left: 80px;
+margin-right: 65px;
+}
+
+.questionNumbers {
+display: flex;
+align-items: center;
+gap: 10px;
+flex-grow: 1;
+}
+
+.questionNumber {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+box-shadow: 0px 0px 10px 0px #00000026;
+color: #9F9F9F;
+
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 14px;
+position: relative;
+}
+
+.questionNumber.active {
+background-color: #007bff;
+color: white;
+}
+
+.addQuestionBtn {
+width: 30px;
+height: 30px;
+font-size: 30px;
+text-align: center;
+cursor: pointer;
+background-color: white;
+color: #969696;
+border: none;
+
+margin-left: 10px;
+}
+
+.removeQuestionBtn {
+position: absolute;
+top: -5px;
+right: -10px;
+width: 20px;
+height: 20px;
+font-size: 16px;
+color: #474444;
+background: transparent;
+border: none;
+cursor: pointer;
+}
+
+.maxQuestionsText {
+font-size: 14px;
+color: #888;
+}
+
+.questionWrapper {
+margin-top: 10px;
+}
+
+.optionsContainer {
+margin-top: 10px;
+}
+
+/* Ensure existing styles are preserved */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ensure existing styles are preserved */
+
+.optionTypeContainer {
+margin-top: 20px; /* Adjust as needed */
+color: #9F9F9F;
+margin-left: 80px;
+}
+
+.optionTypeText {
+display: block;
+font-size: 18px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.optionTypeOptions {
+display: flex;
+align-items: center;
+gap: 70px; /* Reduced gap between options */
+}
+
+
+
+
+
+.optionTypeLabel {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.optionTypeLabel input[type="radio"] {
+  display: none;
+}
+
+.optionTypeLabel span {
+  width: 15px;
+  height: 15px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+
+.optionTypeLabel input[type="radio"]:checked + span {
+  border-color:  #353434;
+  border: 2px solid grey;
+}
+
+.optionTypeLabel input[type="radio"]:checked + span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color:   #353434;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add to CreateQuizModal.module.css */
+
+.optionFields {
+margin-top: 20px;
+
+}
+
+.optionWrapper {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.inField {
+margin-right: 10px;
+flex: 1;
+}
+
+.removeOptionBtn {
+background: none;
+border: none;
+color: red;
+cursor: pointer;
+font-size: 18px;
+margin-left: 10px;
+}
+
+.addOptionBtn {
+  
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 25px 0px #00000026;
+  margin-left: 80px;
+  width: 320px;
+  height: 70px;
+  border-radius: 10px ;
+  opacity: 0px;
+  font-weight: 600;
+  background-color: #FFFFFF;
+color:  #9F9F9F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttonContainer {
+display: flex;
+gap: 170px;
+margin-left: 80px;
+margin-top: 20px;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.cancelButton, .createQuizButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 270px;
+  height: 46px;
+  
+font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 0px 25px 0px #00000026;
+}
+
+.cancelButton {
+  background-color: #FFFFFF;
+  color:#474444;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.createQuizButton {
+  background-color: #60B84B;
+font-size: 21px;
+font-weight: 600;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.optionContainer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+.optionFields {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+
+.optionTextInput {
+  flex: 1;
+ width: 15%;
+ margin-right: 70px;
+}
+
+.optionImageInput {
+  flex: 1;
+  width:25%;
+}
+
+
+
+
+
+
+
+
+
+
+.correctOptionRadioLabel {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-left: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.correctOptionRadioLabel input[type="radio"] {
+  display: none;
+}
+
+.correctOptionRadioLabel span {
+  width: 15px;
+  height: 15px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+
+.correctOptionRadioLabel input[type="radio"]:checked + span {
+  border-color:  #60B84B;
+  border: 2px solid grey;
+}
+
+.correctOptionRadioLabel input[type="radio"]:checked + span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color:   #60B84B;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.timerContainer {
+display: flex;
+gap: 10px;
+flex-direction: column;
+
+}
+
+.timerText {
+
+  font-family: 'Poppins', sans-serif;
+color: #9F9F9F;
+font-size: 20px;
+font-weight: 500;
+}
+
+.timerButton {
+margin-right: 80px;
+padding: 5px 10px;
+background-color:  #FFFFFF;
+ box-shadow: 0px 0px 15px 0px #00000026;
+border-radius: 10px;
+cursor: pointer;
+border: none;
+color: #9F9F9F;
+font-size: 15px;
+font-weight: 500;
+width: 80px;
+font-family: 'Poppins', sans-serif;
+}
+
+.activeTimer {
+background-color:  #D60000;
+color: white;
+box-shadow: 0px 0px 15px 0px #FF4B4B5C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

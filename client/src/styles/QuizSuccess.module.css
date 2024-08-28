@@ -1,0 +1,87 @@
+/* QuizSuccess.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.successContainer {
+    width: 680px;
+    height: 420px;
+    background-color: white; /* or your desired background color */
+    border-radius: 8px; /* optional, for rounded corners */
+    padding: 20px; /* adjust padding as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional, for shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .successHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cancelButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .content {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    color: #474444;
+    
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .linkInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    width: 500px;
+    color: #474444;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  
+  .shareButton {
+    padding: 10px 20px;
+    background-color: #60B84B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 230px;
+    height: 46px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+  
+ 
+
+
+
+
+  /* Style for the success message */
+.copyMessage {
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    background-color: #FFFFFF; /* Background color for visibility */
+    color: black; /* Text color for visibility */
+    padding: 10px 15px; /* Padding for visual appeal */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for the message */
+    margin-left: 250px; /* Remove default margins */
+  
+    align-items: center; /* Center content vertically */
+    border-bottom: 2px solid #60B84B;
+  }
+  
+  .tickIcon {
+    margin-right: 5px; /* Space between checkmark and text */
+  }
+  

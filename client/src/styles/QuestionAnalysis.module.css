@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #EDEDED;
+}
+  
+
+.sidebar {
+  width: 193px;
+  background-color: #ffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid #ddd;
+}
+
+.heading {
+  font-size: 70px;
+  font-weight: 400;
+  color: #474444;
+  font-family: 'Jomhuria', sans-serif;
+  margin-bottom: 120px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #474444;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.nav a.active {
+  font-weight: bold;
+  color: #474444;
+  box-shadow: 0px 0px 14px 0px #0000001F;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.separator {
+  border: none;
+  margin: 5px 0px;
+  border: 1px solid #000000
+}
+
+.logoutBtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color:  #474444;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logoutBtn:hover {
+  box-shadow: 0px 0px 14px 0px #0000001F;
+  border-radius: 10px;
+  padding: 10px;
+}
+  
+  
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color:#EDEDED;
+  margin-left: 50px;
+}
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color:#5076FF;
+    
+  font-family: 'Poppins', sans-serif;
+  }
+  
+  .meta p {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #FF5D01;
+  }
+  
+  .questions h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .questionBlock {
+    margin-bottom: 50px;
+  }
+  
+  .statBox {
+    display: inline-block;
+    width: 280px;
+    height: 110px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-right: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color:#474444;
+  }
+  
+
+  .statBox p{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .questionSeparator {
+    border: none;
+    border: 2px solid #D7D7D7;
+    margin: 20px 0;
+    width: 980px;
+  }
+  

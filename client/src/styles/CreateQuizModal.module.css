@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+   width: 800px;
+height: 400px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+
+  }
+  
+  .inField {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 25px 0px #00000026;
+margin-top: 40px;
+margin-left: 80px;
+    width: 600px;
+height: 70px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+font-weight: 600;
+
+  }
+
+
+  .inField::placeholder {
+    color: #9F9F9F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+  }
+  
+  
+  .quizTypeContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+margin-left: 80px;
+gap:45px;
+  }
+  
+  .quizTypeLabel {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #9F9F9F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+  }
+  
+  .quizTypeBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    box-shadow: 0px 0px 25px 0px #00000026;
+ width: 175px;
+ border: none;
+ color: #9F9F9F;
+ font-family: 'Poppins', sans-serif;
+ font-size: 25px;
+  }
+  
+  .quizTypeBtn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quizTypeBtn.active {
+    background-color: #60B84B;
+    color: white;
+    background-color: #60B84B;
+
+  }
+  
+  .buttonGroup {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 80px;
+gap: 80px;
+
+  }
+  
+  .cancelBtn, .continueBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 270px;
+    height: 46px;
+    
+ font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 25px 0px #00000026;
+  }
+  
+  .cancelBtn {
+    background-color: #FFFFFF;
+    color:#474444;
+    font-size: 21px;
+    font-weight: 600;
+  }
+  
+  .continueBtn {
+    background-color: #60B84B;
+ font-size: 21px;
+ font-weight: 600;
+    color: white;
+  }
+  
+
+
+
+
+
+
+
+
+/*quizsuccess*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.container {
+    background-color: #041325; /* Blue background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.quizBox {
+    background-color: #fff; /* White box */
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%; /* Adjusted to fit better on small screens */
+    max-width: 1066px; /* Max width to prevent it from becoming too large on large screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.questionNumber {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 700;
+    color: #474444;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timer {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 700;
+    color: #D60000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.question h3 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 700;
+    color: #474444;
+    font-family: 'Poppins', sans-serif;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 3vw; /* Responsive font size */
+    font-weight: 600;
+    color: #474444;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.option {
+    background-color: #F0F0F0;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1 1 calc(50% - 10px); /* Two options per row with space between */
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.option:hover {
+    background-color: #e9ecef;
+}
+
+.selectedOption {
+    border: 5px solid #5076FF;
+}
+
+.nextButton {
+    padding: 10px 20px;
+    background-color: #60B84B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%; /* Full width for better responsiveness */
+    max-width: 300px; /* Max width for large screens */
+    height: 50px;
+    font-size: 2vw; /* Responsive font size */
+    font-weight: 600;
+    margin: 10px auto; /* Center horizontally */
+    box-sizing: border-box;
+    
+}
+
+.nextButton:disabled {
+    background-color: #60B84B; /* Change color to indicate disabled state */
+    cursor: not-allowed;
+}
+
+.result h2 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 700;
+    color: #474444;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.result img {
+    margin: 20px auto; /* Center image */
+    display: block;
+}
+
+.message1, .message2 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 700;
+    color: #474444;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.message2 {
+    font-size: 5vw; /* Larger font size for emphasis */
+    margin-top: 150px; /* Margin adjustments for visual balance */
+}
+
+.box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.optionImage {
+    width: 100%; /* Full width for responsive design */
+    max-width: 324px; /* Max width to prevent oversized images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .quizBox {
+        padding: 20px;
+        width: 100%;
+        height: auto; /* Allow box to grow with content */
+    }
+
+    .option {
+        font-size: 4vw; /* Increase font size for smaller screens */
+        flex: 1 1 100%; /* Make options full width */
+    }
+
+    .nextButton {
+        font-size: 4vw; /* Increase font size for smaller screens */
+    }
+
+    .message1, .message2 {
+        font-size: 5vw; /* Increase font size for smaller screens */
+    }
+}
