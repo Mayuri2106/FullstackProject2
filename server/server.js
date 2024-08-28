@@ -15,7 +15,8 @@ connectDB();
 const allowedOrigins = [process.env.BASE_URL, 'https://radiant-paletas-e87272.netlify.app/'];
 const corsOptions = {
     origin: function (origin, callback) {
-        if (!origin) return callback(null, true);
+        console.log('Request Origin:', origin); // Log origin to debug
+        if (!origin) return callback(null, true); // For requests with no origin (e.g., curl or mobile apps)
         if (allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
@@ -27,6 +28,7 @@ const corsOptions = {
     credentials: true,
     optionsSuccessStatus: 200
 };
+
 
 
 app.use(cors(corsOptions));
