@@ -12,7 +12,7 @@ connectDB();
 
 // Middleware
 //const allowedOrigins = [process.env.BASE_URL, 'https://meek-nasturtium-a72598.netlify.app'];
-const allowedOrigins = [process.env.BASE_URL, 'https://66cf046b45ec1d3ebcee893c--radiant-paletas-e87272.netlify.app'];
+const allowedOrigins = [process.env.BASE_URL, 'https://66d4005589fa9dd8e649d7d0--radiant-paletas-e87272.netlify.app'];
 const corsOptions = {
     origin: function (origin, callback) {
         console.log('Request Origin:', origin); // Log origin to debug
