@@ -104,20 +104,30 @@ const QuestionAnalysis = () => {
               <React.Fragment key={index}>
                 <div className={styles.questionBlock}>
                   <h3>Q. {index + 1} {question.questionText}</h3>
-                  <div className={styles.stats}>
-                    <div className={styles.statBox}>
-                      <p>{question.attemptedCount}</p>
-                      <span>People Attempted the question</span>
+                  {question.optionCounts ? (
+                    <div className={styles.optionStats}>
+                      {question.optionCounts.map((option, idx) => (
+                        <div key={idx} className={styles.optionStatBox}>
+                          <p>{option.option}: {option.count} votes</p>
+                        </div>
+                      ))}
                     </div>
-                    <div className={styles.statBox}>
-                      <p>{question.correctCount}</p>
-                      <span>People Answered Correctly</span>
+                  ) : (
+                    <div className={styles.stats}>
+                      <div className={styles.statBox}>
+                        <p>{question.attemptedCount}</p>
+                        <span>People Attempted the question</span>
+                      </div>
+                      <div className={styles.statBox}>
+                        <p>{question.correctCount}</p>
+                        <span>People Answered Correctly</span>
+                      </div>
+                      <div className={styles.statBox}>
+                        <p>{question.incorrectCount}</p>
+                        <span>People Answered Incorrectly</span>
+                      </div>
                     </div>
-                    <div className={styles.statBox}>
-                      <p>{question.incorrectCount}</p>
-                      <span>People Answered Incorrectly</span>
-                    </div>
-                  </div>
+                  )}
                 </div>
                 <hr className={styles.questionSeparator} />
               </React.Fragment>

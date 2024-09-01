@@ -128,7 +128,8 @@ const ShareLink = () => {
               <>
                 <h2>Congratulations!</h2>
                 <img src={image} alt="Congratulations" className={styles.congratulationsImage} />
-                <p className={styles.message1}>Your score is <span style={{ color: 'green' }}> 0{score}/0{quizData.questions.length}</span></p>
+                <p className={styles.message1}>Your score is <span style={{ color: 'green' }}> 0{score}/0
+                  {quizData.questions.length}</span></p>
               </>
             ) : (
               <p className={styles.message2}>Thank you for participating in the Poll!</p>
