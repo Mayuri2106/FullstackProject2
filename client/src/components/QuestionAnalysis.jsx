@@ -4,19 +4,19 @@ import axios from 'axios';
 import styles from '../styles/QuestionAnalysis.module.css';
 
 const QuestionAnalysis = () => {
-  const { quizId, userId } = useParams();
-  const location = useLocation();
+  const { quizId, userId } = useParams(); // Extract quizId and userId from URL
+  const location = useLocation(); // Get current location
   const [quizData, setQuizData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    console.log('Quiz ID:', quizId);
+    console.log('Quiz ID:', quizId); // Log quizId to ensure it's correctly extracted
     if (quizId) {
       setLoading(true);
       axios.get(`https://quizbuilderapp-1iew.onrender.com/quizzes/${quizId}/questions`)
         .then(response => {
-          console.log('API Response:', response.data);
+          console.log('API Response:', response.data); // Log response data
           setQuizData(response.data);
           setLoading(false);
         })
@@ -104,33 +104,20 @@ const QuestionAnalysis = () => {
               <React.Fragment key={index}>
                 <div className={styles.questionBlock}>
                   <h3>Q. {index + 1} {question.questionText}</h3>
-                  {/* Conditional Rendering based on quiz type */}
-                  {quizData.quizType === 'poll' ? (
-                    // Poll Type Rendering
-                    <div className={styles.optionStats}>
-                      {question.optionCounts.map((option, idx) => (
-                        <div key={idx} className={styles.optionStatBox}>
-                          <p>{option.option}: {option.count} votes</p>
-                        </div>
-                      ))}
+                  <div className={styles.stats}>
+                    <div className={styles.statBox}>
+                      <p>{question.attemptedCount}</p>
+                      <span>People Attempted the question</span>
                     </div>
-                  ) : (
-                    // Q&A Type Rendering
-                    <div className={styles.stats}>
-                      <div className={styles.statBox}>
-                        <p>{question.attemptedCount}</p>
-                        <span>People Attempted the question</span>
-                      </div>
-                      <div className={styles.statBox}>
-                        <p>{question.correctCount}</p>
-                        <span>People Answered Correctly</span>
-                      </div>
-                      <div className={styles.statBox}>
-                        <p>{question.incorrectCount}</p>
-                        <span>People Answered Incorrectly</span>
-                      </div>
+                    <div className={styles.statBox}>
+                      <p>{question.correctCount}</p>
+                      <span>People Answered Correctly</span>
                     </div>
-                  )}
+                    <div className={styles.statBox}>
+                      <p>{question.incorrectCount}</p>
+                      <span>People Answered Incorrectly</span>
+                    </div>
+                  </div>
                 </div>
                 <hr className={styles.questionSeparator} />
               </React.Fragment>
